@@ -1,0 +1,144 @@
+*,*before,*after {
+  box-sizing: border-box;
+}
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cantarell', sans-serif;
+      font-family: 'Oxygen', sans-serif;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    /* Brand Description */
+    .i1 { 
+      grid-area: brand;
+      color: #2142ac;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900;
+      font-size: 1.04em;
+      margin: 0 auto;
+    }
+
+    /* Tagline Description */
+    .i2 { 
+      grid-area: tagline;
+      color: #832cda;
+      font-family: 'Oxygen', sans-serif;
+      font-size: 1.06em;
+      font-weight: 700;
+      margin: 20px auto
+    }
+
+    /* Big Easy Savings RedDragon logo */
+    .i3 { 
+      grid-area: logo;
+      background-image: url("./artwork/RedDragon.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    /* About US Menu Button */
+    .i4 { 
+      grid-area: about;
+      background-image: url("./artwork/about_bes.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-height: 51%;
+      max-width: 60% ;
+    }
+
+    /* Contact US Menu Button */
+    .i5 { 
+      grid-area: contact;
+      background-image: url("./artwork/contact_us.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-height: 51%;
+      max-width: 60%;
+    }
+
+    /* lava star explosion under Design Events*/
+    .i6 { 
+      grid-area: star;
+      background-image: url("./artwork/lava-star.png");
+      background-size: contain;
+      background-repeat: no-repeat;   
+    } 
+
+    .i7 { 
+      grid-area: arts; 
+      background-image: url("./artwork/digital_arts.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-height: 69px;
+    }
+
+    .i8 { 
+      grid-area: printed;
+      background-image: url("./artwork/printed_perfections.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-height: 69px;
+    }
+
+    .i9 { 
+      grid-area: designs;
+      background-image: url("./artwork/innovative_designs.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-height: 69px;
+    }
+
+    .i6 img{
+      max-height: 69px;
+      max-width: 96%;
+    }
+
+    
+
+    /* Header Logo Menu Buttons with Grid Area Layout */
+    .grid-container {
+      margin: 10px auto;
+      min-width: 728;
+      max-width: 1440px;
+      display: grid;
+      grid: repeat(3, minmax(30%, 1fr)) / repeat(3, minmax(220px, 1fr));
+      padding: 1rem;
+      column-gap: 20px;
+      
+      /* With areas */
+      grid-template-areas:  
+      "brand about arts"
+      "tagline contact printed "
+      "logo star designs";
+
+      /* Spanning areas together as a whole with background image */
+      grid-area: span 3 / span 3;
+      background-image: url("./artwork/volcanopuff.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+      }/* End of Grid Container */
+
+      /* Footer with Flexbox Layout */
+      .footer >*{
+        display: inline-flex;
+      } 
+
+      .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #a06409dc;
+        
+        color: #f0e4fd;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 728;
+        font-size: 1.1em;
+        padding: 1em;
+        margin: 0 auto;
+        min-width: 600;
+        max-width: 1440px;
+      }
+    
